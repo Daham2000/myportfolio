@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="Style.css">
+    <style>
+        .square{
+            width: 300px;
+            height: 200px;
+            animation-name: myani;
+            animation-direction: alternate;
+            animation-duration: 8s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes myani {
+            0%{
+                margin: 0 0 0 0;
+                background-color: blue;
+            }
+            25%{
+                margin: 0 0 0 1000px;
+                background-color: #fdff5a;
+                transform: rotate(360deg);
+            }
+            50%{
+                background: #be0000;
+                margin: 450px 0 0 1000px;
+                transform: rotate(180deg);
+            }
+            75%{
+                background: #ff47d6;
+                margin: 450px 0 0 0;
+                transform: rotate(360deg);
+            }
+            100%{
+                background: #ff9710;
+                margin: 0 0 0 0;
+                transform: rotate(180deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="square">
+
+    </div>
+</body>
+</html>

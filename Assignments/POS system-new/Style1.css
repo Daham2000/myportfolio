@@ -1,0 +1,273 @@
+/*Navbar*/
+.navbar-brand{
+    font-family: 'Chilanka', cursive;
+    font-weight: bold;
+}
+#navimg{
+    width: 50px;
+}
+#Navbar1{
+    height: 120px;
+    background-color: #149e9e;
+}
+.nav-item{
+    position: relative;
+    left: 200px;
+    display: inline-block;
+}
+.nav-link{
+    margin-right: 28px;
+}
+.userlogin {
+    position: absolute;
+    margin: auto;
+    right: 200px;
+    top: 36px;
+    bottom: 0;
+}
+
+/*search-box*/
+.search-container {
+    float: right;
+    position: relative;
+    right: 1000px;
+    top: 21px;
+}
+
+input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+}
+#makeordersbtn {
+    position: relative;
+    top: 134px;
+    left: 361px;
+}
+
+.search-container button {
+    float: right;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+
+.search-container button:hover {
+    background: #ccc;
+}
+.imgs {
+    position: relative;
+    left: 704px;
+}
+.img1{
+    z-index: 1;
+}
+.img2 {
+    position: relative;
+    right: 29px;
+    width: 66px;
+    top: 39px;
+    z-index: 0;
+}
+
+.para {
+    font-size: 25px;
+    font-family: monospace;
+    position: relative;
+    top: 148px;
+    left: 145px;
+    width: 450px;
+}
+#fotterid{
+    position: relative;
+}
+.socialicons {
+    align-items: center;
+    width: max-content;
+    position: relative;
+    left: 470px;
+    top: 55px;
+}
+
+@media screen and (max-width: 768px) {
+    .search-container {
+        position: relative;
+        top: 38px;
+        left: -16vw;
+    }
+    .collapse{
+        z-index: 5;
+        align-items: flex-start;
+        width: 100vw;
+        position: relative;
+        right: 0px;
+    }
+    .userlogin{
+        position: relative;
+        left: 0;
+    }
+    .collapse>navbar-nav{
+        position: relative;
+        right: 15px;
+    }
+    .nav-item{
+        width: max-content;
+    }
+    .navbar-nav {
+        position: relative;
+        right: 144px;
+    }
+    .imgs {
+        position: relative;
+        left: 199px;
+        top: 142px;
+    }
+    .socialicons {
+        align-items: center;
+        width: max-content;
+        position: relative;
+        left: 34vw;
+        top: 55px;
+    }
+
+}
+
+@media screen and (max-width: 375px) {
+    #Navbar1 {
+        height: 175px;
+        background-color: #149e9e;
+    }
+    
+}
+
+@media (min-width: 426px) and (max-width: 768px){
+    .nav-item {
+        display: inline-block;
+        width: max-content;
+    }
+    .nav-link {
+        display: inline-block;
+    }
+    .userlogin {
+        position: relative;
+        left: 0px;
+    }
+    .search-container {
+        position: relative;
+        top: 38px;
+        left: -31vw;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 425px) {
+    .para {
+        font-size: 20px;
+        font-family: monospace;
+        position: relative;
+        top: 148px;
+        left: 20px;
+        width: 150px;
+    }
+    .imgs {
+        position: relative;
+        left: 138px;
+        top: -119px;
+    }
+    .img1 {
+        z-index: 1;
+        position: relative;
+        left: 31px;
+    }
+    .img2 {
+        position: relative;
+        right: 0px;
+        width: 66px;
+        top: 39px;
+        z-index: 0;
+    }
+    .socialicons {
+        align-items: center;
+        width: max-content;
+        position: relative;
+        left: 23vw;
+        top: 55px;
+    }
+}
+
+@media (min-width: 375px) and (max-width: 425px) {
+    #Navbar1 {
+        height: 160px;
+    }
+}
+
+@media (min-width: 200px) and (max-width: 425px) {
+    #makeordersbtn {
+        position: relative;
+        top: 134px;
+        left: 10vw;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .socialicons {
+        align-items: center;
+        width: max-content;
+        position: relative;
+        left: 21vw;
+        top: 55px;
+    }
+    .navbar-light .navbar-brand{
+        font-size: 26px;
+    }
+
+}
+
+@media (min-width: 425px) and (max-width: 768px) {
+    .navbar-light .navbar-toggler{
+        position: relative;
+        right: 35px;
+    }
+    .navbar-light .navbar-toggler {
+        position: relative;
+        left: 1px;
+    }
+    #makeordersbtn {
+        position: relative;
+        top: 134px;
+        left: 29%;
+    }
+    .navbar-nav {
+        position: relative;
+        right: -21px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .nav-item {
+        position: relative;
+        left: 0px;
+        display: inline-block;
+    }
+    .userlogin {
+        position: relative;
+        left: 20px;
+    }
+    .socialicons {
+        align-items: center;
+        width: max-content;
+        position: relative;
+        left: 41%;
+        top: 55px;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+
+}
+
+

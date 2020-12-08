@@ -1,0 +1,243 @@
+body{
+    overflow-x: hidden;
+}
+/*Navbar*/
+.navbar-brand{
+    font-family: 'Chilanka', cursive;
+    font-weight: bold;
+}
+#navimg{
+    width: 50px;
+}
+#Navbar1{
+    height: 120px;
+    background-color: #149e9e;
+}
+.nav-item{
+    position: relative;
+    left: 0px;
+    display: inline-block;
+}
+.nav-link{
+    margin-right: 28px;
+}
+.userlogin{
+    position: relative;
+    left: 0px;
+}
+.navbar-nav{
+    position: absolute;
+    right: 0;
+    top: 33px;
+    bottom: 0;
+    margin: auto;
+}
+
+input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+}
+#makeordersbtn {
+    position: relative;
+    top: 134px;
+    left: 361px;
+}
+
+.search-container button {
+    float: right;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+
+.search-container button:hover {
+    background: #ccc;
+}
+#fotterid{
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 506px;
+}
+.socialicons {
+    align-items: center;
+    width: max-content;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 65px;
+    margin: auto;
+}
+.topic {
+    font-size: 25px;
+    position: relative;
+    top: 55px;
+    left: 159px;
+    width: max-content;
+}
+.form{
+    position: relative;
+    left: 250px;
+    top: 50px;
+    width: max-content;
+}
+#emailpass {
+    position: relative;
+    left: 69px;
+    width: max-content;
+}
+.navbar-toggler{
+    z-index: 15;
+}
+footer{
+    position: absolute;
+
+}
+
+@media screen and (max-width: 768px) {
+
+
+}
+
+@media (min-width: 250px) and (max-width: 425px) {
+    .form {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        top: 222px;
+        width: max-content;
+    }
+    .topic {
+        font-size: 25px;
+        position: absolute;
+        top: 177px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: max-content;
+    }
+    #fotterid{
+        position: absolute;
+        top: 486px;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    .socialicons {
+        align-items: center;
+        width: max-content;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 73px;
+        margin: auto;
+    }
+    .navbar-collapse{
+        position: absolute;
+        top: 110px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        height: 22vh;
+        z-index: 2;
+    }
+    .navbar-nav {
+        position: absolute;
+        width: 50%;
+        right: 146px;
+        top: 33px;
+        bottom: 0;
+        margin: auto;
+    }
+}
+
+@media (min-width: 426px) and (max-width: 768px){
+    .nav-item {
+        display: inline-block;
+        width: max-content;
+    }
+    .nav-link {
+        display: inline-block;
+    }
+    .userlogin {
+        position: relative;
+        left: 0px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 425px) {
+}
+
+@media (min-width: 375px) and (max-width: 425px) {
+    #Navbar1 {
+        height: 160px;
+    }
+}
+
+@media (min-width: 200px) and (max-width: 425px) {
+    #makeordersbtn {
+        position: relative;
+        top: 134px;
+        left: 10vw;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .navbar-light .navbar-brand{
+        font-size: 26px;
+    }
+
+}
+
+@media (min-width: 425px) and (max-width: 768px) {
+    .navbar-light .navbar-toggler{
+        position: relative;
+        right: 35px;
+    }
+    .navbar-light .navbar-toggler {
+        position: relative;
+        left: 1px;
+    }
+    #makeordersbtn {
+        position: relative;
+        top: 134px;
+        left: 29%;
+    }
+    .navbar-nav {
+        position: relative;
+        right: -21px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .nav-item {
+        position: relative;
+        left: 0px;
+        display: inline-block;
+    }
+    .userlogin {
+        position: relative;
+        left: 20px;
+    }
+    .socialicons {
+        align-items: center;
+        width: max-content;
+        position: relative;
+        left: 41%;
+        top: 55px;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+
+}
+
+

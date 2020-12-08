@@ -1,0 +1,265 @@
+@media (min-width: 1025px) and (max-width: 1440px){
+    .navbar-nav{
+        position: relative;
+        left: -185px;
+        right: 0;
+        top: 30%;
+        bottom: 0;
+        margin: auto;
+    }
+    .userlogin{
+        position: relative;
+        left: 2vw;
+        right: 0px;
+    }
+    .topic{
+        position: absolute;
+        top: 150px;
+        left: 0px;
+        right: 1150px;
+        margin: auto;
+    }
+    .labelCart {
+        position: absolute;
+        left: 53vw;
+        top: 35vh;
+        margin: auto;
+        font-size: 20px;
+    }
+    .table {
+        position: absolute;
+        top: 41vh;
+        bottom: -4vh;
+        right: 3vw;
+    }
+    #formGroupExampleInput{
+        width: 100%;
+    }
+    #formGroupExampleInput2{
+        width: 100%;
+    }
+    #formGroupExample3{
+        width: 90%;
+    }
+    #formGroupExample4{
+        width: 90%;
+    }
+    #formGroupExample5{
+        width: 90%;
+    }
+    #form1{
+        position: absolute;
+        top: 200px;
+        left: 100px;
+    }
+    #addItmbtn{
+        position: absolute;
+        left: 350px;
+    }
+    #Makeord {
+        position: relative;
+        left: 86vw;
+        bottom: -59vh;
+        margin: auto;
+    }
+    .totalabel {
+        position: absolute;
+        top: 75vh;
+        bottom: 0;
+        left: 59vw;
+        right: 0;
+        margin: auto;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1024px) {
+    #navbarNav{
+        position: relative;
+        top: 32%;
+        left: -10%;
+        right: 0;
+        margin: auto;
+        bottom: 1%;
+    }
+    .navbar-nav {
+        position: relative;
+        left: 0px;
+        right: 0;
+        top: 0%;
+        bottom: -0px;
+        margin: auto;
+        width: max-content;
+    }
+    .userlogin{
+        position: relative;
+        left: 0vw;
+        right: 0px;
+    }
+    .topic{
+        position: absolute;
+        top: 150px;
+        left: 0px;
+        right: 1150px;
+        margin: auto;
+    }
+    .labelCart {
+        position: absolute;
+        left: 53vw;
+        top: 35vh;
+        margin: auto;
+        font-size: 20px;
+    }
+    .table {
+        position: absolute;
+        top: 41vh;
+        bottom: -4vh;
+        right: 3vw;
+    }
+    #formGroupExampleInput{
+        width: 100%;
+    }
+    #formGroupExampleInput2{
+        width: 100%;
+    }
+    #formGroupExample3{
+        width: 90%;
+    }
+    #formGroupExample4{
+        width: 90%;
+    }
+    #formGroupExample5{
+        width: 90%;
+    }
+    #form1{
+        position: absolute;
+        top: 200px;
+        left: 100px;
+    }
+    #addItmbtn{
+        position: absolute;
+        left: 350px;
+    }
+    #Makeord {
+        position: relative;
+        left: 86vw;
+        bottom: -59vh;
+        margin: auto;
+    }
+    .totalabel {
+        position: absolute;
+        top: 82vh;
+        bottom: 0;
+        left: 59vw;
+        right: 0;
+        margin: auto;
+    }
+}
+
+@media (min-width: 612px) and (max-width: 991px) {
+    .userlogin{
+        position: relative;
+        left: 0vw;
+        right: 0px;
+    }
+    .topic{
+        position: absolute;
+        top: 150px;
+        left: 0px;
+        right: 1150px;
+        margin: auto;
+    }
+    .labelCart {
+        position: absolute;
+        left: 53vw;
+        top: 35vh;
+        margin: auto;
+        font-size: 20px;
+    }
+    .table {
+        position: absolute;
+        top: 41vh;
+        bottom: -4vh;
+        right: 3vw;
+    }
+    #formGroupExampleInput{
+        width: 100%;
+    }
+    #formGroupExampleInput2{
+        width: 100%;
+    }
+    #formGroupExample3{
+        width: 90%;
+    }
+    #formGroupExample4{
+        width: 90%;
+    }
+    #formGroupExample5{
+        width: 90%;
+    }
+    #form1{
+        position: absolute;
+        top: 200px;
+        left: 100px;
+    }
+    #addItmbtn{
+        position: absolute;
+        left: 350px;
+    }
+    #Makeord {
+        position: relative;
+        left: 82vw;
+        bottom: -59vh;
+        margin: auto;
+    }
+    .totalabel {
+        position: absolute;
+        top: 82vh;
+        bottom: 0;
+        left: 59vw;
+        right: 0;
+        margin: auto;
+    }
+}
+
+@media (min-width: 300px) and (max-width: 425px) {
+    #form1 {
+        position: absolute;
+        top: 232px;
+        left: 44px;
+    }
+    #addItmbtn {
+        position: absolute;
+        top: 669px;
+        left: 105px;
+        margin: auto;
+    }
+    .table {
+        position: absolute;
+        top: 763px;
+        margin: auto;
+        left: 14vw;
+    }
+    #fotterid {
+        position: relative;
+        top: 920px;
+    }
+    .labelCart{
+        position: absolute;
+        top: 129vh;
+        left: 9vw;
+    }
+    #Makeord{
+        position: absolute;
+        top: 179vh;
+        left: 33vw;
+    }
+    .totalabel{
+        position: absolute;
+        top: 275vh;
+        bottom: 0;
+        left: 3vw;
+        right: 0;
+        margin: auto;
+    }
+
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sercult1</title>
+    <style>
+        #mainSection{
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            display: flex;
+            flex-flow: column;
+            justify-content: space-between;
+            width: 65%;
+            height: 110px;
+        }
+        #bulbs{
+            display: flex;
+            flex-flow: row;
+            justify-content: space-between;
+        }
+        #btns{
+            display: flex;
+            flex-flow: row;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        #mainSection>#bulbs>div{
+            width: 120px;
+            height: 60px;
+            border: 1px solid orangered;
+            transition-duration: 600ms;
+        }
+    </style>
+</head>
+<body>
+    <section id="mainSection">
+        <section id="bulbs">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </section>
+        <section id="btns">
+            <button id="Backbtn">Back</button>
+            <button id="Nextbtn">Next</button>
+        </section>
+    </section>
+
+    <script src="JQuery%20Lib/jquery-3.5.1.min.js"></script>
+<script>
+    var count=1;
+    $('#bulbs>div:nth-child(1)').css('background','red');
+    $("#Nextbtn").on('click',function () {
+        if(count==7){
+            $('#bulbs>div:nth-child(7)').css('background','white');
+            count=0;
+        }
+        $('#bulbs>div:nth-child('+count+')').css('background','white');
+        count=count+1;
+        $('#bulbs>div:nth-child('+count+')').css('background','red');
+    })
+    $("#Backbtn").on('click',function () {
+        $('#bulbs>div:nth-child('+count+')').css('background','white');
+        count=count-1;
+        if(count<=0){
+            count=7;
+        }
+        $('#bulbs>div:nth-child('+count+')').css('background','red');
+    })
+</script>
+</body>
+</html>

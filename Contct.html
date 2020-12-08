@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact me</title>
+    <style>
+        body{
+            overflow-x:hidden ;
+        }
+        body>p:nth-child(1){
+            font-weight: bold;
+            font-size: 20px;
+            font-family: 'Rhodium Libre', serif;
+            letter-spacing: 1px;
+            position: relative;
+            left: 20px;
+        }
+        section>p {
+            display: inline;
+            font-size: 15px;
+            font-family: 'Rhodium Libre', serif;
+            position: relative;
+            left: 20px;
+        }
+        #msg1{
+            position: relative;
+            top: -70px;
+        }
+        #msg{
+            position: relative;
+            left: 49px;
+        }
+        section>textarea{
+            position: relative;
+            left: 69px;
+            top: 22px;
+            border-radius: 20px;
+            margin-bottom: 15px;
+            background-color: #eaeeea;
+            border: none;
+        }
+        button{
+            position: relative;
+            top: 15px;
+            left: 365px;
+            border-radius: 10px;
+            padding: 04px 14px 4px 14px;
+            border: none;
+            background-color: #0094ff;
+            color: white;
+            font-family: 'Rhodium Libre', serif;
+            transition-duration: 500ms;
+        }
+        button:hover{
+            background-color: #380bff;
+            transition-duration: 500ms;
+        }
+
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rhodium+Libre&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;500&family=Work+Sans:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;500&family=Work+Sans:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <p>Send me a massage</p>
+    <section>
+        <p>Name</p>
+        <textarea name="" id="" cols="30" rows="1"></textarea><br>
+        <p>Email</p>
+        <textarea name="" id="" cols="30" rows="1"></textarea> <br>
+        <p id="msg1">Massage</p>
+        <textarea name="" id="msg" cols="30" rows="6"></textarea>
+    </section>
+    <button>Send massage</button>
+
+</body>
+</html>

@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="assests\img\MyProfileLogo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keyword" content="Daham Akalanka,daham,DahamIJSE,IJSE">
+    <meta name="description" content="Daham Akalanka Full stack devoloper Srilanka">
+    <link rel="stylesheet" href="S1.css">
+    <link rel="stylesheet" href="Style2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Ubuntu&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Daham Akalanka Official Web Profile</title>
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        a{
+            text-decoration: none;
+        }
+        #myBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+                <div class="buttons">
+                    <ul>
+                        <li onclick="scrollWin(0,0)" style="flex-basis: 100px;">Home</li>
+                        <li onclick="scrollWin(0,1400)" style="flex-basis: 100px;">Projects</li>
+                        <li onclick="scrollWin(0,2200)" style="flex-basis: 100px;">Assignments</li>
+                        <li onclick="opencontact()" style="flex-basis: 100px;">Contact</li>
+                        <li onclick="scrollWin(0,450)" style="flex-basis: 100px;">About</li>
+                    </ul>
+                </div>
+                <!--buttons-->
+            <img src="assests\img\MyProfileLogo.png" alt="" style="flex-grow: 0">
+                <!--logo-->
+            <!--hamburger-->
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <!--hamburger-->
+
+        </nav>
+        <!--navbar-->
+    </header>
+
+    <main>
+        <div class="topic">
+            <h1>Full Stack Devoloper</h1>
+        </div>
+        <!--topic-->
+        <div class="mainimg">
+            <picture>
+                    <source src="assests\img\Rectangle 6.png" media="(min-width:500px)">
+                    <img src="assests\img\Rectangle 6.png" alt="Image">
+            </picture>
+        </div>
+        <!--social-->
+        <div class="myCV">
+            <div class="cvdispr">
+                <h2>LET’S <br>
+                    INTRODUCE ABOUT <br>
+                    MYSELF</h2>
+                <p>
+                    Hi, I’m Daham Akalanka <br>
+                    I am  a full stack software engineer in Sri Lanka <br> and My portfolio is represantation of all that I’ll
+                    <br> learned as a software engineering student.
+                    <br> <br>
+                    I love to devolop web sites,softwares and am <br> looking for more opportunities to work in coding
+                    <br> on freelance basis.
+                </p>
+            </div>
+            <img src="assests/img/M.jpg" alt="" style="width: 230px; height: 260px">
+        </div>
+        <!--myCV-->
+
+        <section class="Numofproje">
+            <div class="numofproj">
+                <h2>05</h2>
+                <h4>No of <br>Completed <br> projects</h4>
+            </div>
+            <div class="numofproj">
+                <h2>02</h2>
+                <h4>No of projects <br> this month</h4>
+            </div>
+            <div class="numofproj">
+                <h2>05</h2>
+                <h4>No of projects <br> this year</h4>
+            </div>
+        </section>
+        <!--Numofproje-->
+
+        <div class="myskill">
+            <p>My Skills</p>
+            <section class="imgs">
+                <div class="lan">
+                    <img src="assests\img\icons8-java-52.png" alt=""><h4>Java</h4>
+                </div>
+                <div class="lan">
+                    <img src="assests\img\icons8-mysql-logo-100.png" alt=""><h4>Mysql</h4>
+                </div>
+                <div class="lan">
+                    <img src="assests\img\icons8-html-5-128.png" alt=""><h4>Html</h4>
+                </div>
+                <div class="lan">
+                    <img src="assests\img\icons8-css3-64.png" alt=""><h4>CSS</h4>
+                </div>
+                <div class="lan">
+                    <img src="assests\img\icons8-javascript-logo-64.png" alt=""><h4>Javascript</h4>
+                </div>
+            </section>
+        </div> <!--myskill-->
+
+        <div class="myproj">
+                <p>My Projects</p>
+                <p>Here are a few design projects I've worked on recently</p>
+
+            <section class="myprojects">
+                <div class="project1">
+                    <a href=""><img src="assests\img\unnamed.jpg" alt="pro1img" width="315px" height="260px" class="frontside">
+                    <p>Hardware project</p></a>
+                    <div class="backside">
+                        <div class="details">
+                            <h2>Hardware Project<br>
+                            <span>This is my first project when a was learning as a Software engineering Student</span>
+                            </h2>
+                        </div>
+                        <div class="icon">
+                            <a href="#"><i class="fa fa-eye" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project1">
+                    <a href=""><img src="assests\img\1_jwA-xx-16cVLVsxPNeJSkg.jpeg" alt="pro1img" width="315px" height="260px" class="frontside">
+                        <p>Library project</p></a>
+                    <div class="backside">
+                        <div class="details">
+                            <h2>Library Project<br>
+                                <span>This is a basic system for Library Assiatance</span>
+                            </h2>
+                        </div>
+                        <div class="icon">
+                            <a href="#"><i class="fa fa-eye" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project1">
+                    <a href=""><img src="assests\img\High-Quality-Sliding-Glass-Door-Commercial-Cake-Display-Cooler-for-Bakery-Shop.jpg" alt="pro1img"
+                    width="315px" height="260px" class="frontside">
+                    <p>Backery project</p> </a>
+                    <div class="backside">
+                        <div class="details">
+                            <h2>Bakery Project<br>
+                                <span>This is a basic system for small bakery</span>
+                            </h2>
+                        </div>
+                        <div class="icon">
+                            <a href="#"><i class="fa fa-eye" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project1">
+                    <a href=""><img src="assests\img\unnamed2.jpg" alt="pro1img" width="315px" height="260px" class="frontside">
+                    <p>Project 04</p></a>
+                    <div class="backside">
+                        <div class="details">
+                            <h2>Under devoloping<br>
+                                <span></span>
+                            </h2>
+                        </div>
+                        <div class="icon">
+                            <a href="#"><i class="fa fa-eye" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project1">
+                    <a href=""><img src="assests\img\unnamed2.jpg" alt="pro1img" width="315px" height="260px" class="frontside">
+                    <p>Project 05 </p> </a>
+                    <div class="backside">
+                        <div class="details">
+                            <h2>Under devoloping<br>
+                                <span></span>
+                            </h2>
+                        </div>
+                        <div class="icon">
+                            <a href="#"><i class="fa fa-eye" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project1">
+                    <a href="google.com"><img src="assests\img\unnamed2.jpg" alt="pro1img" width="315px" height="260px" class="frontside">
+                    <p>Project 06  </p></a>
+                    <div class="backside">
+                        <div class="details">
+                            <h2>Under devoloping<br>
+                                <span></span>
+                            </h2>
+                        </div>
+                        <div class="icon">
+                            <a href="#"><i class="fa fa-eye" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="btn"><button>VIEW ALL</button></div>
+        </div> <!--myproj-->
+
+        <div class="myassingments">
+            <p>My Assignments</p>
+            <p>There are all assignments I have done on RWAD</p>
+
+            <section class="myprojects">
+                <div class="project1">
+                    <a href="Assignments/index2.html" target="_blank"><img src="assests\img\crop-women-typing-on-laptop-keyboard-4132310.jpg" alt="pro1img" width="315px" height="260px">
+                    <p>Circle Border Transition </p></a>
+                </div>
+                <div class="project1">
+                    <a href="Assignments/Caranimation/Car.html" target="_blank"><img src="assests\img\crop-women-typing-on-laptop-keyboard-4132310.jpg" alt="pro1img" width="315px" height="260px">
+                    <p>Car animation</p></a>
+                </div>
+                <div class="project1">
+                    <a href="Assignments\POS system\index.html" target="_blank"><img src="assests\img\crop-women-typing-on-laptop-keyboard-4132310.jpg" alt="pro1img" width="315px" height="260px">
+                    <p>POS System </p></a>
+                </div>
+                <div class="project1">
+                    <a href="Assignments/Rotating%20square/Index.html" target="_blank"><img src="assests\img\crop-women-typing-on-laptop-keyboard-4132310.jpg" alt="pro1img" width="315px" height="260px">
+                    <p>Rotating Square</p></a>
+                </div>
+                <div class="project1">
+                    <a href="Assignments\WaterDrop\index2.html" target="_blank"><img src="assests\img\crop-women-typing-on-laptop-keyboard-4132310.jpg" alt="pro1img" width="315px" height="260px">
+                    <p>Waterdrop</p></a>
+                </div>
+                <div class="project1">
+                    <a href="Assignments\Slider\index3.html" target="_blank"><img src="assests\img\crop-women-typing-on-laptop-keyboard-4132310.jpg" alt="pro1img" width="315px" height="260px">
+                    <p>Image Slider </p> </a>
+                </div>
+
+            </section>
+            <div class="btn"><button onclick="location.href='Assignments/index.html'">VIEW ALL</button></div>
+        </div> <!--myassingments-->
+        
+    </main>
+
+    <div class="icon-bar">
+        <a href="https://www.facebook.com/daham.akalanka.1" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a>
+        <a href="https://twitter.com/DahamAkalanka1" class="twitter"><i class="fa fa-twitter"></i></a>
+        <a href="https://github.com/Daham2000" class="google"><i class="fa fa-github"></i></a>
+        <a href="https://lk.linkedin.com/in/daham-akalanka-b673a9195" target="_blank" class="linkedin"><i class="fa fa-linkedin"></i></a>
+        <a href="https://stackoverflow.com/users/13951359/daham-akalanka" class="stackoverflow"><i class="fa fa-stack-overflow"></i></a>
+    </div>
+    
+    <!--<div class="scrolltotop" id="myBtn">-->
+        <!--<img src="assests/img/icons8-scroll-up-96.png" alt="" title="Go to top" onclick="topFunction()">-->
+    <!--</div>-->
+
+    <div id="myBtn" onclick="topFunction()">
+        <img src="assests/img/icons8-scroll-up-96.png" alt="" style="width:50px;">
+    </div>
+
+
+
+    <footer class="rootfoot">
+        <div class="contact">
+            <h3>Contact me</h3>
+            <div class="condetails">
+                <address>Phone number - 0772934677</address>
+                <address>E-mail - dahamakalanka2000@gmail.com</address>
+            </div>
+            <button><a href="Contct.html" target="_blank" style="color: white">Send Massage</a></button>
+        </div> <!--contact-->
+
+        <div class="logoinfoot">
+            <img src="assests\img\MyProfileLogo.png" alt="footerlogo" width="130px" height="50px">
+            <p>Happy coding, Happy life</p>
+            <section class="imgsfoot">
+                <img src="assests/img/icons8-facebook-48.png" alt="">
+                <img src="assests\img\icons8-twitter-100 (1).png" alt="">
+                <img src="assests\img\icons8-stack-overflow-100 (3).png" alt="">
+                <img src="assests/img/Ellipse%209.png" alt="">
+            </section>
+        </div>
+
+    </footer>  <!--rootfoot-->
+
+    <script src="BasicJ.js"></script>
+
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</body>
+
+</html>

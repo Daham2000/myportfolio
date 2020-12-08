@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="Style1.css">
+    <link rel="stylesheet" href="Style2.css">
+    <link rel="icon" href="../assects/icons8-pos-terminal-96.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Chilanka&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="D:\RWAD\bootstrap-4.5.0-dist\css\bootstrap.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>DApos - Make Order</title>
+
+</head>
+<body>
+<!--navbar-->
+<nav class="navbar navbar-expand-lg navbar-light" id="Navbar1" style="background-color: #149E9E; ">
+    <div class="logoinnav">
+        <a class="navbar-brand" href="#" style="color: white; font-size: 26px;">DA point of sale system</a>
+        <img src="assects/icons8-add-shopping-cart-100.png" alt="" id="navimg">
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav" style="background-color: #149e9e; z-index: 5; width: 100vw">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="../Dashboard/dashboard.html" style="color: white">Dashboard <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../RegisterCustomer/SaveCus.html" style="color: white">Manage Customer</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../ViewItems/ViewItems.html" style="color:white; ">Manage Items</a>
+            </li>
+
+            <div class="userlogin" style="display: inline-block">
+                <li class="nav-item">
+                    <a class="nav-link" href="#" style="color: white">Sign up</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../Userlogin/index.html" style="color: white">Logout</a>
+                </li>
+            </div>
+        </ul>
+    </div>
+</nav>
+
+<main>
+    <div class="container-fluid" style="margin-top: 15px">
+        <div class="row row-cols-3">
+            <div class="col-4 col-sm-7 col-md-5 col-lg-4 col-xl-4">
+                <!--Orders-->
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Order</h5>
+                        <form>
+                            <div class="form-group">
+                                <label for="formGroupExampleInput">Order ID:</label>
+                                <input class="form-control" id="formGroupExampleInput" placeholder="Input Order Id">
+                            </div>
+                            <div class="form-group">
+                                <label for="formGroupExampleInput2">Date</label>
+                                <input type="date" class="form-control" id="formGroupExampleInput2" placeholder="Select Order date">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!--Customer-->
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Customer</h5>
+                        <form>
+                            <div class="form-group">
+                                <label for="formGroupExampleInput">Customer ID:</label>
+                                <input class="form-control" id="formGroupExampleInput" placeholder="Select Customer ID">
+                            </div>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                                Add New Customer
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Add a new Customer</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+
+                                            <form>
+                                                <div class="form-group">
+                                                    <label for="formGroupExampleInput">Customer ID</label>
+                                                    <input class="form-control" id="formGroupExampleInput" placeholder="Auto Genarate">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="formGroupExampleInput2">Customer Name</label>
+                                                    <input class="form-control" id="formGroupExampleInput2" placeholder="Input Name of customer">
+                                                </div>
+                                            </form>
+
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-10 col-sm-8 col-md-7 col-lg-5 col-xl-4">
+                <!--Items-->
+                <div class="card" style="width: 22rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Item</h5>
+                        <form>
+                            <div class="form-group">
+                                <label for="formGroupExampleInput">Item ID</label>
+                                <input class="form-control" id="formGroupExampleInput" placeholder="Select Item Id">
+                            </div>
+                            <div class="form-group">
+                                <label for="formGroupExampleInput2">Item Name</label>
+                                <input class="form-control" id="formGroupExampleInput2" placeholder="Select Item Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="formGroupExampleInput2">Unit Price</label>
+                                <input class="form-control" id="formGroupExampleInput2" placeholder="">
+                            </div>
+                            <div class="form-group">
+                                <label for="Qtys">Qty</label>
+                                <input type="number" class="form-control col-3" id="Qtys" placeholder="Input num of item" style="display: inline"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <label for="stoct">Qty on store</label>
+                                <input type="number" class="form-control col-3" id="stoct" placeholder="10" style="display: inline">
+                            </div>
+                            <div class="form-group">
+                                <label for="formGroupExampleInput2">Item Total</label>
+                                <input class="form-control" id="formGroupExampleInput2" placeholder="">
+                            </div>
+                            <button type="button" class="btn btn-danger">Add to Cart</button>
+                            <button type="button" class="btn btn-secondary">Clear</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-10 col-sm-7 col-md-5 col-lg-3">
+                <!--Orderdetails-->
+                <form>
+                    <div class="form-group">
+                        <label for="formGroupExampleInput">Discount</label>
+                        <input type="number" class="form-control" id="formGroupExampleInput" placeholder="">
+                    </div>
+                    <div class="form-group">
+                        <label for="formGroupExampleInput2">Cash Total</label>
+                        <input type="number" class="form-control" id="formGroupExampleInput2" placeholder="">
+                    </div>
+                    <div class="form-group">
+                        <label for="formGroupExampleInput2">Change</label>
+                        <input type="number" class="form-control" id="formGroupExampleInput3" placeholder="">
+                    </div>
+                    <label for="formGroupExampleInput2">Payment Method</label>
+                    <select class="custom-select" id="txtPaymentMethod" required="">
+                        <option>Credit</option>
+                        <option>Debet</option>
+                        <option>Cash</option>
+                    </select>
+                    <p style="font-family: Arial; font-size: 25px; font-weight: bold;
+                    text-align: center; margin-top: 25px">Net Total <br> Rs 1850/=</p>
+                    <button type="button" class="btn btn-success" style="width: 100%">Make Payment</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!--table-->
+    <table class="table11 col-11" style="position: relative; left: 20px; top: 25px">
+        <thead class="thead-dark table-success ">
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Item  code</th>
+            <th scope="col">Item name</th>
+            <th scope="col">Quantity</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+        </tr>
+        <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+        </tr>
+        <tr>
+            <th scope="row">3</th>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+        </tr>
+        </tbody>
+    </table>
+
+</main>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>

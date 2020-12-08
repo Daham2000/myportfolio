@@ -1,0 +1,27 @@
+.search-container>form>button{
+    border: none;
+    padding: 5px 8px 5px 8px;
+}
+.table{
+    margin-top: 30px;
+}
+
+@media (min-width: 992px) and (max-width: 1440px){
+    .userlogin>.nav-item{
+        display: inline-block;
+    }
+    .navbar-nav{
+        position: relative;
+        left: 15vw;
+    }
+    .userlogin{
+        position: relative;
+        left: 05vw;
+    }
+    .search-container{
+        margin-top: 15px;
+        margin-left: 10px;
+    }
+}
+
+

@@ -1,0 +1,52 @@
+#navbar1{
+    background-color: #149E9E;
+}
+#btn1{
+    color: white;
+}
+#btn1:hover{
+    color: #cdcdcd;
+}
+#search{
+    color: #ffffff;
+}
+
+@media (min-width: 430px) and (max-width: 629px){
+    .table-responsive {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        position: relative;
+        -webkit-overflow-scrolling: touch;
+        top: 294px;
+    }
+    .h2, h2 {
+        font-size: 2rem;
+        position: relative;
+        top: 282px;
+    }
+    .coloum {
+        width: 150px;
+        height: 95%;
+    }
+}
+
+@media (min-width: 300px) and (max-width: 429px){
+    .table-responsive {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        position: relative;
+        -webkit-overflow-scrolling: touch;
+        top: 529px;
+    }
+    .h2, h2 {
+        font-size: 2rem;
+        position: relative;
+        top: 518px;
+    }
+    .coloum {
+        width: 200px;
+        height: 95%;
+    }
+}

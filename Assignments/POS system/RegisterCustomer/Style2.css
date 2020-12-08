@@ -1,0 +1,63 @@
+@media (min-width: 200px) and (max-width: 425px){
+    #RegisterCus {
+        position: relative;
+        top: 335px;
+        left: 193px;
+        font-size: 12px;
+    }
+    .logoinnav{
+        position: relative;
+        left: 0px;
+    }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+    #makeordersbtn {
+        position: relative;
+        left: 60%;
+        top: 492px;
+        font-size: 12px;
+    }
+    .socialicons {
+        align-items: center;
+        width: max-content;
+        position: relative;
+        left: 38%;
+        top: 55px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px){
+    .navbar-expand-lg .navbar-nav {
+        position: relative;
+        left: -151px;
+    }
+    .userlogin {
+        position: relative;
+        left: -2%;
+    }
+    .nav-item:nth-child(2) {
+        position: relative;
+        left: 182px;
+        display: inline-block;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1440px){
+    #search{
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    #table1{
+        margin-top: 65px;
+        width: 75%;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        top: 350px;
+    }
+
+}

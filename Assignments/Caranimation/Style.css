@@ -1,0 +1,99 @@
+body{
+    overflow: hidden;
+    margin: 0 0 0 0;
+}
+section{
+    width: 100%;
+    height: 90%;
+}
+.sky{
+    z-index: -1;
+    width: 200%;
+}
+section>.sky>img{
+    position: absolute;
+    top:0;
+    height: 60%;
+    width: 100%;
+    margin: auto;
+    display: inline-block;
+}
+.city{
+    position: relative;
+    top: 165px;
+    width: 350%;
+}
+section>.city>img{
+    display: inline-block;
+    width: 18%;
+    animation-name: movecity;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+section>.road{
+    position: relative;
+    top: 160px;
+    width: 100%;
+    height: 100%;
+}
+section>.road>img:nth-child(1){
+    width: 318%;
+    height: 30%;
+    animation-name: moveroad;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+.road>img:nth-child(2){
+    width: 20%;
+    position: absolute;
+    bottom: 63%;
+    left: 40%;
+}
+.wheel{
+    width: 100%;
+    height: 100%;
+}
+.road>.wheel>img:nth-child(1){
+    position: absolute;
+    bottom: 66%;
+    left: 41.5%;
+    width: 4%;
+    height: 21%;
+    animation-name: wheelani;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+.road>.wheel>img:nth-child(2){
+    position: absolute;
+    bottom: 66%;
+    left: 53.8%;
+    width: 4%;
+    height: 21%;
+    animation-name: wheelani;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+@keyframes wheelani {
+    from{
+
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+@keyframes movecity {
+    from{
+
+    }
+    to{
+        transform: translateX(-200vw);
+    }
+}
+@keyframes moveroad{
+    from{
+
+    }
+    to{
+        transform: translateX(-200vw);
+    }
+}

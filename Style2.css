@@ -1,0 +1,60 @@
+.project1{
+    /*transform: translate(-50%,-50%);*/
+    transform-style: preserve-3d;
+    perspective: 600px;
+    transition: 0.5s;
+}
+.frontside{
+    backface-visibility: hidden;
+    transform: rotateX(0deg);
+    transition: 0.5s;
+}
+.project1:hover .frontside{
+    transform: rotateX(-180deg);
+}
+.backside{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transform: rotateX(180deg);
+    transition: 0.5s;
+    background-color: #838383;
+    display: flex;
+    flex-flow: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+.project1:hover .backside{
+    transform: rotateX(0deg);
+}
+.details>h2{
+    color: #eaeeea;
+    font-size: 20px;
+    font-family: Cambria;
+}
+.details>h2>span{
+    font-size: 12px;
+}
+.icon>a>i{
+    font-size: 30px;
+    color: #eaeeea;
+}
+
+/*Animation linearGradient*/
+main>.Numofproje {
+    background: linear-gradient(270deg, #a165db, #00f194);
+    background-size: 400% 400%;
+
+    -webkit-animation: AnimationName 12s ease infinite;
+    -moz-animation: AnimationName 12s ease infinite;
+    animation: AnimationName 12s ease infinite;
+}
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}

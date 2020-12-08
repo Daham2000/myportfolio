@@ -1,0 +1,443 @@
+body{
+    margin: 0;
+    overflow-x: hidden;
+}
+nav{
+    margin: 0;
+    background-color: #4f48cc;
+    position: fixed;
+    width: 100vw;
+    top: 0px;
+    z-index: 5;
+    opacity: 0.9;
+}
+nav>h3{
+    color: beige;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+}
+nav>.buttons>ul{
+    list-style: none;
+    float: right;
+}
+nav>.buttons>ul>li{
+    color: beige;
+    font-size: 1.2rem;
+    display: inline-block;
+    font-family: 'Ubuntu', sans-serif;
+    margin-right: 3vw;
+    cursor: pointer;
+}
+nav>.buttons>ul>li:hover{
+    color: #cac4cf;
+    transition-duration: 500ms;
+}
+nav>.buttons>ul>li:nth-child(1){
+    color: #dddbd7;
+}
+nav>img{
+    width: 130px;
+    height: 55px;
+    float: left;
+    margin-left: 5%;
+}
+
+main{
+    display: flex;
+    flex-flow: column;
+    position: relative;
+    top: 100px;
+    justify-content: center;
+    align-items: center;
+}
+.topic>h1{
+    font-size: 55px;
+    font-family: 'Baloo Tamma 2', cursive;
+    margin-bottom: 15px;
+}
+main>.Numofproje{
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row;
+    flex-wrap: wrap;
+    align-content: center;
+}
+main>.Numofproje>.numofproj>h2{
+    margin-bottom: 2px;
+    font-family: Arial;
+    text-align: center;
+    font-size: 35px;
+}
+main>.Numofproje>.numofproj>h4{
+    margin-top: 5px;
+    font-family: Arial;
+    text-align: center;
+}
+main>.Numofproje{
+    position: relative;
+    top: 150px;
+    width: 100vw;
+    background: -webkit-linear-gradient(0deg, #737ee3 0%, #be95fc 100%);
+    color: #eaeeea;
+}
+main>.myCV{
+    position: relative;
+    top: 50px;
+    background: #4F4DD3;
+    display: flex;
+    flex-flow: row;
+    width: 100vw;
+    justify-content: space-around;
+    align-items: center;
+}
+main>.myCV>.cvdispr{
+    display: flex;
+    flex-direction: column;
+    color: #eaeeea;
+    font-family: 'Red Hat Display', sans-serif;
+}
+.icon-bar {
+    position: fixed;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+.icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+}
+
+.icon-bar a:hover {
+    background-color: #5d5d5d;
+}
+
+.facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.google {
+    background: #cb4735;
+    color: white;
+}
+
+.linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+.stackoverflow {
+    background: #6fbb64;
+    color: white;
+}
+
+/*Mtskills*/
+.myskill{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 220px;
+    text-align: center;
+    width: 50vw;
+}
+.myskill>p{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 30px;
+}
+.imgs{
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row;
+    justify-content: space-between;
+}
+.lan>img{
+    width: 50px;
+}
+.lan>h4{
+    margin-top: 5px;
+    font-family: Arial;
+}
+.lan:hover{
+    color: #4F4DD3;
+    transition-duration: 500ms;
+}
+
+/*MyProjects*/
+.myproj{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    position: relative;
+    top: 230px;
+}
+.myproj>p:nth-child(1){
+    font-family: Arial;
+    font-size: 25px;
+    margin-bottom: 1px;
+}
+.myproj>.myprojects{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.project1{
+    padding: 6px;
+    text-align: center;
+}
+.project1>a>img{
+    transition-duration: 500ms;
+}
+.project1>a>img:hover{
+    opacity: 0.7;
+    transition-duration: 500ms;
+}
+.project1>a{
+    color: #363636;
+    font-family: Arial;
+    font-size: 20px;
+}
+
+/*MyAssignments*/
+.myassingments{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    position: relative;
+    top: 230px;
+}
+.myassingments>p:nth-child(1){
+    font-family: Arial;
+    font-size: 25px;
+    margin-bottom: 1px;
+}
+.myassingments>.myprojects{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.project1{
+    padding: 6px;
+    text-align: center;
+}
+.project1>a>img:hover{
+    opacity: 0.7;
+}
+.project1>a{
+    color: #363636;
+    font-family: Arial;
+    font-size: 20px;
+}
+.btn>button{
+     padding: 8px 12px 8px 12px;
+     font-family: Arial;
+     font-size: 12px;
+     border-radius: 15px;
+     background-color: #924cdb;
+     color: #eaeeea;
+     border: 1px solid #924cdb;
+ }
+.btn>button:hover{
+    background-color: #eaeeea;
+    border: 1px solid #924cdb;
+    color: black;
+    transition-duration: 500ms;
+}
+/*footer*/
+.rootfoot{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    position: relative;
+    top: 350px;
+}
+.rootfoot>.contact{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    width: 600px;
+    background-color: #1a0d34;
+    color: #eaeeea;
+    padding: 16px 15px 16px 15px;
+    border-radius: 12px;
+}
+.condetails{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-between;
+    padding: 10px 5px 10px 5px;
+    text-align: center;
+}
+.condetails>address{
+    font-family: Arial;
+    font-style: normal;
+    margin-bottom: 2px;
+}
+.contact{
+    position: relative;
+    top: 45px;
+}
+.contact>h3{
+    font-family: 'Noto Sans', sans-serif;
+    letter-spacing: 2px;
+}
+.contact>button{
+    font-family: Arial;
+    font-size: 15px;
+    border-radius: 15px;
+    background: none;
+    border: 2px solid #441f88;
+    transition-duration: 500ms;
+    padding: 6px 10px 6px 10px;
+}
+.contact>button:hover{
+    background-color: #6f3ba8;
+    border: 1px solid #924cdb;
+    color: #d5d5be;
+    transition-duration: 500ms;
+}
+.logoinfoot{
+    background-color: #6767cc;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    color: #eaeeea;
+    width: 100%;
+    height: 250px;
+    justify-items:center;
+    justify-content: center;
+}
+.logoinfoot>p{
+    margin-top: 1px;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 13px;
+}
+.imgsfoot{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+    position: relative;
+    top: 15px;
+}
+.imgsfoot>img{
+    width: 30px;
+}
+
+@media (min-width: 700px) and (max-width: 977px) {
+    .myproj>.myprojects{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    .myassingments>.myprojects{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+}
+@media (min-width: 300px) and (max-width: 699px) {
+    .myproj>.myprojects{
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .myassingments>.myprojects{
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .mainimg>picture>img{
+        width:70vw;
+    }
+    .rootfoot>.contact{
+        width: 350px;
+        display: flex;
+        flex-flow: column;
+    }
+    .topic>h1 {
+        font-size: 40px;
+    }
+    .myskill {
+        width: 98vw;
+    }
+    .line {
+        width: 25px;
+        height: 2px;
+        background: white;
+        margin: 5px;
+    }
+    .hamburger {
+        z-index: 3;
+    }
+    .navbar>.buttons>ul {
+        display: flex;
+        flex-direction: column;
+        z-index: 1;
+        float:none;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+    }
+    nav>.buttons {
+        position: fixed;
+        background: #5d49cc;
+        height: 100vh;
+        flex-direction: row;
+        clip-path: circle(100px at 90% -17%);
+        -webkit-clip-path: circle(100px at 90% -17%);
+        transition: all 1s ease-out;
+        pointer-events: none;
+        width: 100vw;
+        top: 8px;
+        justify-content: center;
+        justify-items: center;
+        align-content: center;
+        align-items: center;
+    }
+    .buttons.open {
+        clip-path: circle(700px at 90% -17%);
+        -webkit-clip-path: circle(803px at 90% -17%);
+    }
+    nav{
+        display: flex;
+        flex-flow:row;
+        justify-content: space-between;
+        align-items: center;
+        opacity: 0.9;
+    }
+    .navbar>img{
+        z-index: 5;
+    }
+}
+
+@media (min-width: 300px) and (max-width: 425px) {
+    .rootfoot>.contact{
+        width: 280px;
+    }
+    main>.myCV{
+        display: flex;
+        flex-flow: column;
+    }
+    .topic>h1 {
+        font-size: 35px;
+    }
+    .myproj>p{
+        text-align: center;
+    }
+}
+

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Slider - WithJquery</title>
+    <style>
+        body{
+            overflow: hidden;
+        }
+        .slider {
+            display: flex;
+            width: 100vw;
+            height: 90vh;
+            position: relative;
+            left: -8px;
+        }
+        .slider img{
+            width: 101vw;
+            height:100%;
+        }
+        .btns{
+            position: absolute;
+            display: flex;
+            flex-flow: row;
+            justify-items: center;
+            justify-content: space-between;
+            align-content: center;
+            align-items: center;
+            width: 100vw;
+            top: 0;
+            bottom: 0;
+            height: 100%;
+        }
+        .btns>button{
+            height: max-content;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="slider">
+        <img src="abstract-analog-art-camera-390089.jpg" alt="">
+        <img src="black-and-white-production-scene-take-tool-918281.jpg" alt="">
+        <img src="brown-film-133070.jpg" alt="">
+        <img src="camera-event-live-settings-66134.jpg" alt="">
+        <img src="curve-industry-photography-vintage-65128.jpg" alt="">
+    </div>
+    <div class="btns">
+        <button id="Previuesbtn">Previues</button>
+        <button id="Nextbtn">Next</button>
+    </div>
+
+    <script src="JQuery%20Lib/jquery-3.5.1.min.js"></script>
+    <script>
+        var count=0;
+        $('#Nextbtn').click(function () {
+            count=count+101;
+            if(count==505){
+                count=00;
+            }
+            $('.slider').css({
+                'transform': 'translateX(-'+count+'vw)',
+                'transition-duration': '1000ms'
+        })
+        })
+        $('#Previuesbtn').click(function () {
+            count=count-101;
+            if(count==-101){
+                count=404;
+            }
+            $('.slider').css({
+                'transform': 'translateX(-'+count+'vw)',
+                'transition-duration': '1000ms'
+            })
+        })
+    </script>
+</body>
+</html>

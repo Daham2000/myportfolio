@@ -1,0 +1,15 @@
+.navbar>a{
+    color: beige;
+}
+.Makeorder{
+    visibility: hidden;
+    display: none;
+}
+#ManageCUs{
+    visibility: hidden;
+    display: none;
+}
+#ManaItems{
+    visibility: hidden;
+    display: none;
+}

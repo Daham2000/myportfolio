@@ -1,0 +1,175 @@
+/*Navbar*/
+.navbar-brand{
+    font-family: 'Chilanka', cursive;
+    font-weight: bold;
+}
+#navimg{
+    width: 50px;
+}
+#Navbar1{
+    height: 120px;
+    background-color: #149e9e;
+}
+.nav-item{
+    position: relative;
+    left: 200px;
+    display: inline-block;
+}
+.nav-link{
+    margin-right: 28px;
+}
+.userlogin {
+    position: relative;
+    left: 9%;
+}
+#RegisterCus {
+    position: relative;
+    top: 353px;
+    left: 478px;
+    font-size: 12px;
+}
+#makeordersbtn {
+    position: relative;
+    left: 76%;
+    top: 492px;
+    font-size: 12px;
+}
+
+.search-container button {
+    float: right;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+
+.search-container button:hover {
+    background: #ccc;
+}
+
+#fotterid{
+    position: relative;
+}
+.socialicons {
+    align-items: center;
+    width: max-content;
+    position: relative;
+    left: 43%;
+    top: 49px;
+}
+.Savecustopic {
+    position: relative;
+    left: 96px;
+    top: 57px;
+    font-size: 21px;
+    font-family: monospace;
+    width: max-content;
+}
+#navimg{
+
+}
+
+@media screen and (max-width: 768px) {
+    .collapse{
+        z-index: 5;
+        align-items: flex-start;
+        width: 100vw;
+        position: relative;
+        right: 0px;
+    }
+    .userlogin{
+        position: relative;
+        left: 0;
+    }
+    .collapse>navbar-nav{
+        position: relative;
+        right: 15px;
+    }
+    .nav-item{
+        width: max-content;
+    }
+    .navbar-nav {
+        position: relative;
+        right: 144px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    #Navbar1 {
+        height: 175px;
+        background-color: #149e9e;
+    }
+
+}
+
+@media (min-width: 426px) and (max-width: 768px){
+    .nav-item {
+        display: inline-block;
+        width: max-content;
+    }
+    .nav-link {
+        display: inline-block;
+    }
+    .userlogin {
+        position: relative;
+        left: 0px;
+    }
+}
+
+@media (min-width: 100px) and (max-width: 320px) {
+    #makeordersbtn {
+        position: relative;
+        left: 100px;
+        top: 492px;
+        font-size: 12px;
+    }
+    .socialicons {
+        align-items: center;
+        width: max-content;
+        position: relative;
+        left: 63px;
+        top: 40px;
+    }
+}
+
+@media (min-width: 375px) and (max-width: 425px) {
+    #Navbar1 {
+        height: 160px;
+    }
+
+}
+
+@media (min-width: 321px) and (max-width: 425px){
+    #makeordersbtn {
+        position: relative;
+        left: 38%;
+        top: 492px;
+        font-size: 12px;
+    }
+    .form1 {
+        position: relative;
+        left: 21%;
+        top: 35px;
+        width: max-content;
+    }
+    .socialicons {
+        align-items: center;
+        width: max-content;
+        position: relative;
+        left: 29%;
+        top: 55px;
+    }
+    #RegisterCus {
+        position: relative;
+        top: 353px;
+        left: 63%;
+        font-size: 12px;
+    }
+
+}
+
+
+

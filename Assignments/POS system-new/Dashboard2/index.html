@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="icon" href="../assects/icons8-pos-terminal-96.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>POS - Dashboard</title>
+</head>
+<body>
+<!--navigation bar-->
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #00a7a7">
+    <a class="navbar-brand text-white" id="dashb" href="#" onclick="showDashboard()">DA-POS System</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+                <a class="nav-link text-white" href="#" id="makeOrdera">Make Order<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" id="ManageCus1" href="#"">Manage Customers</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" id="ManageI" href="#"">Manage Items</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" id="reports" href="#">Reports</a>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="color: aliceblue">Search</button>
+        </form>
+    </div>
+</nav>
+<!--navgationbar-->
+
+<!--dashboardMain-->
+<main id="dash" class="d-flex flex-column bd-highlight mb-3">
+    <!--chartorder-->
+    <script src="https://cdn.commoninja.com/sdk/latest/commonninja.js" defer></script>
+    <div class="commonninja_component" comp-type="chart" comp-id="bd233065-0af3-4d15-9f93-3f0cbc401977"></div>
+
+    <!--Cardlist-->
+    <div class="d-flex flex-row bd-highlight mb-3 justify-content-center">
+        <!--manageCustomers-->
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">Total Customers - This week</h5>
+            <p class="card-text">124</p>
+            <a href="#" class="btn btn-primary" onclick="showManaCustomers()">Manage Customers</a>
+        </div>
+    </div><!--manageCustomers-->
+
+        <!--manageCustomers-->
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Num of Sell Items - This week</h5>
+                <p class="card-text">200</p>
+                <a href="#" class="btn btn-primary" onclick="showManaItems()">Manage Items</a>
+            </div>
+        </div><!--manageCustomers-->
+
+        <!--manageCustomers-->
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Number of Orders - This week</h5>
+                <p class="card-text">155</p>
+                <a href="#" class="btn btn-primary" onclick="showMakeOrder()">Make Order</a>
+            </div>
+        </div><!--manageCustomers-->
+
+    </div><!--Cardlist-->
+
+</main> <!--dashboardMain-->
+
+<!--MakeorderMain-->
+<main id="MRO1" class="Makeorder">
+    <div class="container-fluid" style="margin-top: 15px">
+        <div class="row row-cols-3">
+            <div class="col-4 col-sm-7 col-md-5 col-lg-4 col-xl-4">
+                <!--Orders-->
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Order</h5>
+                        <form>
+                            <div class="form-group">
+                                <label for="formGroupExampleInput">Order ID:</label>
+                                <input class="form-control" id="formGroupExampleInput" placeholder="Input Order Id">
+                            </div>
+                            <div class="form-group">
+                                <label for="formGroupExampleInput2">Date</label>
+2                                <input type="date" class="form-control" id="formGroupExampleInput2" placeholder="Select Order date">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!--Customer-->
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Customer</h5>
+                        <form>
+                            <div class="form-group">
+                                <label for="formGroupExampleInput">Customer ID:</label>
+                                <input class="form-control" id="formGroupExampleInput" placeholder="Select Customer ID">
+                            </div>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                                Add New Customer
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Add a new Customer</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+
+                                            <form>
+                                                <div class="form-group">
+                                                    <label for="formGroupExampleInput">Customer ID</label>
+                                                    <input class="form-control" id="formGroupExampleInput" placeholder="Auto Genarate">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="formGroupExampleInput2">Customer Name</label>
+                                                    <input class="form-control" id="formGroupExampleInput2" placeholder="Input Name of customer">
+                                                </div>
+                                            </form>
+
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-10 col-sm-8 col-md-7 col-lg-5 col-xl-4">
+                <!--Items-->
+                <div class="card" style="width: 22rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Item</h5>
+                        <form>
+                            <div class="form-group">
+                                <label for="formGroupExampleInput">Item ID</label>
+                                <input class="form-control" id="formGroupExampleInput" placeholder="Select Item Id">
+                            </div>
+                            <div class="form-group">
+                                <label for="formGroupExampleInput2">Item Name</label>
+                                <input class="form-control" id="formGroupExampleInput2" placeholder="Select Item Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="formGroupExampleInput2">Unit Price</label>
+                                <input class="form-control" id="formGroupExampleInput2" placeholder="">
+                            </div>
+                            <div class="form-group">
+                                <label for="Qtys">Qty</label>
+                                <input type="number" class="form-control col-3" id="Qtys" placeholder="Input num of item" style="display: inline"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <label for="stoct">Qty on store</label>
+                                <input type="number" class="form-control col-3" id="stoct" placeholder="10" style="display: inline">
+                            </div>
+                            <div class="form-group">
+                                <label for="formGroupExampleInput2">Item Total</label>
+                                <input class="form-control" id="formGroupExampleInput2" placeholder="">
+                            </div>
+                            <button type="button" class="btn btn-danger">Add to Cart</button>
+                            <button type="button" class="btn btn-secondary">Clear</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-10 col-sm-7 col-md-5 col-lg-3">
+                <!--Orderdetails-->
+                <form>
+                    <div class="form-group">
+                        <label for="formGroupExampleInput">Discount</label>
+                        <input type="number" class="form-control" id="formGroupExampleInput" placeholder="">
+                    </div>
+                    <div class="form-group">
+                        <label for="formGroupExampleInput2">Cash Total</label>
+                        <input type="number" class="form-control" id="formGroupExampleInput2" placeholder="">
+                    </div>
+                    <div class="form-group">
+                        <label for="formGroupExampleInput2">Change</label>
+                        <input type="number" class="form-control" id="formGroupExampleInput3" placeholder="">
+                    </div>
+                    <label for="formGroupExampleInput2">Payment Method</label>
+                    <select class="custom-select" id="txtPaymentMethod" required="">
+                        <option>Credit</option>
+                        <option>Debet</option>
+                        <option>Cash</option>
+                    </select>
+                    <p style="font-family: Arial; font-size: 25px; font-weight: bold;
+                    text-align: center; margin-top: 25px">Net Total <br> Rs 1850/=</p>
+                    <button type="button" class="btn btn-success" style="width: 100%">Make Payment</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!--table-->
+    <table class="table11 col-11" style="position: relative; left: 20px; top: 25px">
+        <thead class="thead-dark table-success ">
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Item  code</th>
+            <th scope="col">Item name</th>
+            <th scope="col">Quantity</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+        </tr>
+        <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+        </tr>
+        <tr>
+            <th scope="row">3</th>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+        </tr>
+        </tbody>
+    </table>
+</main><!--MakeOrderMain-->
+
+<!--ManageCustomers-->
+<main id="ManageCUs">
+
+    <form class="needs-validation" novalidate>
+        <div class="form-row">
+            <div class="col-md-6 mb-3">
+                <label for="validationCustom01">Customer ID</label>
+                <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="validationCustom02">Customer Name</label>
+                <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col-md-6 mb-3">
+                <label for="validationCustom03">Customer Address</label>
+                <input type="text" class="form-control" id="validationCustom03" value="Otto" required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="validationCustom04">Customer Salary</label>
+                <input type="text" class="form-control" id="validationCustom04" value="Otto" required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <label for="validationCustom05">Zip</label>
+                <input type="text" class="form-control" id="validationCustom05" required>
+                <div class="invalid-feedback">
+                    Please provide a valid zip.
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                <label class="form-check-label" for="invalidCheck">
+                    Agree to terms and conditions
+                </label>
+                <div class="invalid-feedback">
+                    You must agree before submitting.
+                </div>
+            </div>
+        </div>
+        <button id="savebtn" class="btn btn-primary" type="submit">Submit form</button>
+    </form>
+
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function() {
+            'use strict';
+            window.addEventListener('load', function() {
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.getElementsByClassName('needs-validation');
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function(form) {
+                    form.addEventListener('submit', function(event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+            }, false);
+        })();
+    </script>
+
+    <!-- Button trigger modal -->
+    <div class="d-flex justify-content-center py-5">
+        <button type="button" class="btn btn-primary " data-toggle="modal" data-target="#exampleModal" style="margin-right: 10px">
+            Add new customer
+        </button>
+        <button type="button" class="btn btn-primary " data-toggle="modal" style="margin-right: 10px">
+            Delete
+        </button>
+        <button type="button" class="btn btn-primary " data-toggle="modal">
+            Update
+        </button>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Add new customer</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form class="form1">
+                        <div class="form-group">
+                            <label for="formGroupExampleInput">Customer name</label>
+                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Nimal Perera" style="width: 250px">
+                        </div>
+                        <div class="form-group">
+                            <label for="formGroupExampleInput2">Address</label>
+                            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Galle 07" style="width: 250px">
+                        </div>
+                        <div class="form-group">
+                            <label for="formGroupExampleInput2">Phone number</label>
+                            <input type="number" class="form-control" id="formGroupExampleInput3" placeholder="0772533***" style="width: 250px">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="input-group md-form form-sm form-1 pl-5  col-md-4 col-sm-8 py-1" id="search">
+        <div class="input-group-prepend">
+    <span class="input-group-text cyan lighten-2" id="basic-text1"><i class="fas fa-search text-white "
+                                                                      aria-hidden="true"></i></span>
+        </div>
+        <input class="form-control my-0 py-1 col-sm-8" type="text" placeholder="Search" aria-label="Search">
+    </div>
+
+    <div class="tableitems" id="table1">
+        <table class="table">
+            <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Customer ID</th>
+                <th scope="col">Customer Name</th>
+                <th scope="col">Customer Address</th>
+                <th scope="col">Customer Salary</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+</main>   <!--ManageCustomers-->
+
+<!--ManageItems-->
+<main id="ManaItems">
+    <div class="search-container">
+        <form action="/action_page.php">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+    </div>
+
+    <table class="table col-sm-5 col-md-8 container-fluid">
+        <thead class="thead-dark">
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Item code</th>
+            <th scope="col">Item name</th>
+            <th scope="col">Quantity</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+        </tr>
+        <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+        </tr>
+        <tr>
+            <th scope="row">3</th>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <!-- Button trigger modal -->
+    <div class="d-flex justify-content-center">
+        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal" style="margin-right: 10px">
+            Add new Item
+        </button>
+        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal" style="margin-right: 10px">
+            Delete
+        </button>
+        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">
+            Update
+        </button>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Add product</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputEmail4">Item name</label>
+                                <input type="text" class="form-control" id="inputEmail4">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="inputPassword4">Item code</label>
+                                <input type="text" class="form-control" id="inputPassword4">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputAddress">Date</label>
+                            <input type="date" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                        </div>
+                        <div class="form-group ">
+                            <label for="inputState">State</label>
+                            <select id="inputState" class="form-control">
+                                <option selected>Select catagory</option>
+                                <option>Electronic</option>
+                                <option>Food</option>
+                                <option>Vegitable</option>
+                            </select>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-4">
+                                <label for="inputCity">Qty</label>
+                                <input type="number" class="form-control" id="inputCity">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                <label class="form-check-label" for="gridCheck">
+                                    Check me out
+                                </label>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save Item</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</main> <!--ManageItems-->
+
+<script src="s1.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Seucult2</title>
+
+    <style>
+        #mainSection{
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            display: flex;
+            flex-flow: column;
+            justify-content: space-between;
+            width: 65%;
+            height: 110px;
+        }
+        #bulbs{
+            display: flex;
+            flex-flow: row;
+            justify-content: space-between;
+        }
+        #btns{
+            display: flex;
+            flex-flow: row;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        #mainSection>#bulbs>div{
+            width: 120px;
+            height: 50px;
+            border: 1px solid orangered;
+            transition-duration: 800ms;
+        }
+    </style>
+</head>
+<body>
+<section id="mainSection">
+    <section id="bulbs">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+    <section id="btns">
+        <button id="Startbtn">Start</button>
+        <button id="Stopbtn">Stop</button>
+    </section>
+</section>
+
+<script src="JQuery%20Lib/jquery-3.5.1.min.js"></script>
+<script>
+    var id;
+    var i=1,r=0;
+    $('#bulbs>div:nth-child(1)').css('background','red');
+    $("#Stopbtn").on('click',function () {
+        clearInterval(id);
+    })
+    $("#Startbtn").on('click',function () {
+        clearInterval(id);
+        id=setInterval(leftToRight,100)
+    })
+    function leftToRight() {
+        if(r>=7){
+            i=i-1;
+            $('#bulbs>div:nth-child('+(i)+')').css('background','red');
+            $('#bulbs>div:nth-child('+(i+1)+')').css('background','white');
+            r=r+1;
+            if(r==14){i=1;r=0;}
+        }else{
+            $('#bulbs>div:nth-child('+(i-1)+')').css('background','white');
+            $('#bulbs>div:nth-child('+i+')').css('background','red');
+            i=i+1;
+            r=r+1;
+        }
+    }
+</script>
+</body>
+</html>
