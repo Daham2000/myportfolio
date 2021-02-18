@@ -196,6 +196,7 @@ main>.myCV>.cvdispr{
 .project1{
     padding: 6px;
     text-align: center;
+    color: white;
 }
 .project1>a>img{
     transition-duration: 500ms;
